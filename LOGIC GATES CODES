@@ -1,0 +1,194 @@
+1) OR GATE:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity ORGATE is
+    Port ( A,B : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end ORGATE;
+
+architecture Behavioral of ORGATE is
+
+begin
+Y<= A or B;
+
+end Behavioral;
+
+2) AND GATE:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity ANDGATE is
+    Port ( A,B : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end ANDGATE;
+
+architecture Behavioral of ANDGATE is
+
+begin
+Y<= A and B;
+
+end Behavioral;
+
+3)NOT GATE:
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity NOTGATE is
+    Port ( A : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end NOTGATE;
+
+architecture Behavioral of NOTGATE is
+
+begin
+Y<= not A;
+
+end Behavioral;
+
+4)NOR GATE:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity NORGATE is
+    Port ( A,B : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end NORGATE;
+
+architecture Behavioral of NORGATE is
+
+begin
+Y<= A nor B;
+
+end Behavioral;
+
+5) NAND GATE:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity NANDGATE is
+    Port ( A,B : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end NANDGATE;
+
+architecture Behavioral of NANDGATE is
+
+begin
+Y<= A nand B;
+
+end Behavioral;
+
+6) XOR GATE:
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity XORGATE is
+    Port ( A,B : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end XORGATE;
+
+architecture Behavioral of XORGATE is
+
+begin
+Y<= A xor B;
+
+end Behavioral;
+
+7)XNOR GATE:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity XNORGATE is
+    Port ( A,B : in  STD_LOGIC;
+           Y : out  STD_LOGIC);
+end XNORGATE;
+
+architecture Behavioral of XNORGATE is
+
+begin
+Y<= A xnor B;
+
+end Behavioral;
+
