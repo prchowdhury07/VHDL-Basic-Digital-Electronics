@@ -1,0 +1,59 @@
+1) Half-Substractor:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity HS is
+    Port ( A,B : in  STD_LOGIC;
+           D,Bout : out  STD_LOGIC);
+end HS;
+
+architecture Behavioral of HS is
+
+begin
+D<= A xor B;
+Bout<= (not A) and B;
+
+end Behavioral;
+
+
+2) Full Substractor:
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_arith.ALL;
+use IEEE.STD_LOGIC_unsigned.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx primitives in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity FS is
+    Port ( A,B,C : in  STD_LOGIC;
+           D,Bout : out  STD_LOGIC);
+end FS;
+
+architecture Behavioral of FS is
+
+begin
+D<= (A xor B) xor C;
+Bout<= (( not A) and B) or (( not A) and C) or ( B and C);
+
+end Behavioral;
+
